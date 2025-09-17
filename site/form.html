@@ -2,28 +2,35 @@
 <!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Viikko 1 – Lomake</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8">
+  <title>Lomake</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1><!-- TODO: Lomake-sivun H1 --></h1>
-    <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="table.html">Taulukko</a></li>
+        <li><a href="form.html">Lomake</a></li>
+        <li><a href="image.html">Kuva</a></li>
+      </ul>
     </nav>
   </header>
   <main>
-    <!-- TODO: Luo <form>:
-         - lisää label for + id parit
-         - järkevät type-arvot (email, number, tms.)
-         - method ja action attribuutit
-         - submit-painike
-    -->
+    <h1>Lomake</h1>
+    <form method="post" action="submit.html">
+      <label for="nimi">Nimi:</label>
+      <input type="text" id="nimi" name="nimi" required>
+      <br>
+      <label for="Puhelinnumero">Puhelinnumero:</label>
+      <input type="number" id="Puhelinnumero" name="Puhelinnumero" min="0" required>
+      <br>
+      <input type="submit" value="Lähetä">
+    </form>
   </main>
   <footer>
-    <!-- TODO: Footer -->
+    <p>&copy; illiniilo</p>
   </footer>
 </body>
 </html>

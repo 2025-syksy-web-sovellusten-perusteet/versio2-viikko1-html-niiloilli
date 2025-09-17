@@ -1,24 +1,45 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Viikko 1 – Taulukko</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8">
+  <title>Taulukko</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1><!-- TODO: Taulukko-sivun H1 --></h1>
-    <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="table.html">Taulukko</a></li>
+        <li><a href="form.html">Lomake</a></li>
+        <li><a href="image.html">Kuva</a></li>
+      </ul>
     </nav>
   </header>
   <main>
-    <!-- TODO: Lisää datataulukko, jossa on caption + thead/tbody -->
+    <h1>Taulukko</h1>
+    <table>
+      <caption>Opiskelijat</caption>
+      <thead>
+        <tr>
+          <th>Nimi</th>
+          <th>Ika</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adam</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Olof</td>
+          <td>40</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
   <footer>
-    <!-- TODO: Footer -->
+    <p>&copy; illiniilo</p>
   </footer>
 </body>
 </html>
