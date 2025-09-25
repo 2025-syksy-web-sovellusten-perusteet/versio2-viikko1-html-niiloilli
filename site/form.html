@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Päävalikko">
       <ul>
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="table.html">Taulukko</a></li>
@@ -17,15 +17,17 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Lomake</h1>
-    <form method="post" action="submit.html">
-      <label for="nimi">Nimi:</label>
-      <input type="text" id="nimi" name="nimi" required>
-      <br>
-      <label for="Puhelinnumero">Puhelinnumero:</label>
-      <input type="number" id="Puhelinnumero" name="Puhelinnumero" min="0" required>
-      <br>
+    <main>
+    <form>
+      <label for="name">Nimi:</label>
+      <input type="text" id="name" name="name" required />
+      <br/>
+      <label for="email">Sähköposti:</label>
+      <input type="email" id="email" name="email" required />
+      <br/>
+      <label for="age">Ikä:</label>
+      <input type="number" id="age" name="age" required />
+      <br/>
       <input type="submit" value="Lähetä">
     </form>
   </main>
